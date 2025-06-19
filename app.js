@@ -1,18 +1,11 @@
 import { join } from 'node:path'
 import express from 'express'
 import createError from 'http-errors'
-import cookieParser from 'cookie-parser'
 import logger from 'morgan'
-
-// import i18n from './lib/i18nConfig.js';
-// import upload from './lib/uploadConfig.js';
 import connectMongoose from './lib/mongooseConfig.js'
+//API controllers imports
 
-//API controllers example
-import * as apiController from './controllers/APi/apiController.js'
-// Web Site controller example
-import * as webSiteController from './controllers/controller.js'
-
+// Web Site controller 
 
 const app = express()
 
@@ -28,14 +21,8 @@ app.use(logger('dev'))
 app.use(express.json())
 // transforms data sent by a form to a js object
 app.use(express.urlencoded({ extended: false }))
-// cookie parser to get cookies from client
-app.use(cookieParser())
 // set the folder where statis resources will be served
 app.use(express.static(join(import.meta.dirname, 'public')))
-
-// starts i18n, reads header 'accept lenguage' from the request and choose a lang file
-// app.use(i18n.init)
-
 
 // Routing
 // index route rendering home.ejs
