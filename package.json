@@ -1,32 +1,35 @@
 {
-  "name": "npx-express-generator-ejs",
+  "name": "men-api-starter",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node --watch ./bin/www",
-    "debug": "cross-env PORT=5555 DEBUG=npx-express-generator-ejs:* npm start",
+    "debug": "cross-env PORT=5555 DEBUG=npx-men-api-starter:* npm start",
     "dev": "cross-env PORT=4444 npm start",
     "lint": "standard"
   },
   "dependencies": {
     "connect-mongo": "^5.1.0",
-    "cookie-parser": "1.4.7",
     "cross-env": "7.0.3",
-    "debug": "4.3.7",
-    "dotenv": "^16.4.7",
-    "ejs": "3.1.10",
-    "express": "^4.21.2",
+    "debug": "4.4.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "express-session": "^1.18.1",
     "http-errors": "2.0.0",
-    "i18n": "^0.15.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.3",
+    "mongoose": "^8.16.0",
     "morgan": "1.10.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^2.0.1"
   },
   "devDependencies": {
-    "standard": "17.1.2"
+    "@eslint/config-array": "^0.20.1",
+    "@eslint/js": "^9.29.0",
+    "@eslint/object-schema": "^2.1.6",
+    "eslint": "^9.29.0",
+    "glob": "^11.0.3",
+    "globals": "^16.2.0",
+    "rimraf": "^6.0.1"
   },
   "eslintConfig": {
     "extends": "standard"
