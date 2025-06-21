@@ -1,7 +1,8 @@
 {
   "name": "men-api-starter",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "It is a project scaffold designed to build RESTful APIs using the MEN stack (MongoDB, Express, and Node.js) with modern support for ES6 modules. This scaffold provides a clean and professional base setup, ideal for quickly starting backend projects while following best practices in architecture and folder structure.",
+  "private": false,
   "type": "module",
   "scripts": {
     "start": "node --watch ./bin/www",
