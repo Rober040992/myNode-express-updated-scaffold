@@ -7,13 +7,7 @@ A simple CLI tool to scaffold a modern MEN stack (MongoDB, Express, Node.js) API
 You can use this tool to create a new API project by running:
 
 ```bash
-npm init men-api
-```
-
-Or using `npx`:
-
-```bash
-npx create-men-api my-api
+npx men-api-scaffold my-api
 ```
 
 This will create a new folder `my-api/` with the full project structure, including all configuration files and dependencies defined.
