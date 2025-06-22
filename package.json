@@ -1,6 +1,6 @@
 {
-  "name": "create-men-api",
-  "version": "1.0.1",
+  "name": "men-api-scaffold",
+  "version": "1.0.0",
   "description": "A CLI to scaffold a MEN stack API project using ES6 modules.",
   "keywords": [
     "cli",
@@ -14,6 +14,7 @@
   ],
   "license": "MIT",
   "author": "Roberto Gomez Fabrega <rgfrasta@gmail.com>",
+  
   "bin": {
     "create-men-api": "./create.js"
   },

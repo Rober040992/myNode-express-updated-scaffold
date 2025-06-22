@@ -1,6 +1,6 @@
 {
-  "name": "create-men-api",
-  "version": "1.0.1",
+  "name": "men-api-scaffold",
+  "version": "1.0.0",
   "description": "It is a project scaffold designed to build RESTful APIs using the MEN stack (MongoDB, Express, and Node.js) with modern support for ES6 modules. This scaffold provides a clean and professional base setup, ideal for quickly starting backend projects while following best practices in architecture and folder structure.",
   "keywords": [
     "APIs",
@@ -22,7 +22,7 @@
   "type": "module",
   "scripts": {
     "start": "node --watch ./bin/www",
-    "debug": "cross-env PORT=5555 DEBUG=npx-men-api-starter:* npm start",
+    "debug": "cross-env PORT=5555 DEBUG=npx-men-api-scaffold:* npm start",
     "dev": "cross-env PORT=4444 npm start",
     "lint": "eslint ."
   },

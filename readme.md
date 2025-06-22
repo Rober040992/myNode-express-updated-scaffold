@@ -1,4 +1,4 @@
-# create-men-api
+# men-api-scaffold
 
 A simple CLI tool to scaffold a modern MEN stack (MongoDB, Express, Node.js) API project using ES6 modules.
 

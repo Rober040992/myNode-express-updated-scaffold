@@ -1,4 +1,4 @@
-# Node ES6 Scaffold
+# men-api-scaffold
 
 A clean and minimal scaffold to build RESTful APIs using the MEN stack (MongoDB, Express, Node.js) with modern ES6 module support.
 
@@ -35,7 +35,7 @@ MONGO_URI=mongodb://localhost/my-database
 ## 📁 Folder Structure
 
 ```
-NODE-ES6-SCAFFOLD/
+my-api/
 ├── bin/
 │   └── www               # Entry point for HTTP server
 ├── controllers/          # Express controllers
