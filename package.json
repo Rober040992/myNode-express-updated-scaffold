@@ -2,6 +2,9 @@
   "name": "men-api-starter",
   "version": "1.0.0",
   "description": "It is a project scaffold designed to build RESTful APIs using the MEN stack (MongoDB, Express, and Node.js) with modern support for ES6 modules. This scaffold provides a clean and professional base setup, ideal for quickly starting backend projects while following best practices in architecture and folder structure.",
+  "keywords": ["APIs", "scaffold", "ES6", "express", "Node", "MongoDB"],
+  "license": "MIT",
+  "author": "Roberto Gomez Fabrega <rgfrasta@gmail.com>",
   "private": false,
   "type": "module",
   "scripts": {
