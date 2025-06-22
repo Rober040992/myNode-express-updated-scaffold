@@ -37,8 +37,10 @@ MONGO_URI=mongodb://localhost/my-database
 NODE-ES6-SCAFFOLD/
 ├── bin/
 │   └── www               # Entry point for HTTP server
+├── controllers/          # controllers folder
 ├── lib/
 │   └── mongooseConfig.js # MongoDB connection setup
+├── middlewares/          # middlewares folder
 ├── models/               # Place your Mongoose models here
 ├── public/
 │   ├── images/           # Static images
@@ -61,8 +63,11 @@ NODE-ES6-SCAFFOLD/
 Already included in `package.json`:
 
 ### Runtime Dependencies
+> [!NOTE]
+> If there is any dependency useless for your project, just delete it from the `package.json`right before use `npm install`
 
 - `express`: Web framework
+- `cors`: providing a Connect/Express middleware
 - `mongoose`: MongoDB ODM
 - `dotenv`: Load environment variables
 - `morgan`: HTTP request logger
@@ -72,6 +77,7 @@ Already included in `package.json`:
 - `connect-mongo`: MongoDB session store
 - `jsonwebtoken`: For token-based auth
 - `cross-env`: Environment variable support across platforms
+- `zod`: validations
 
 ### Dev Dependencies
 
