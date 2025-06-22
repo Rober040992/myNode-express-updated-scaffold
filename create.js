@@ -27,5 +27,6 @@ console.log(`✅ Project created in ./${projectName}`);
 console.log(`👉 Next steps:`);
 console.log(`   cd ${projectName}`);
 console.log(`   npm install`);
+console.log(`bash -> cp .env.example .env`)
 console.log(`   npm run dev`);
 console.log(`👌  Project ready!`);

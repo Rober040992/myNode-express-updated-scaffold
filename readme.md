@@ -37,6 +37,12 @@ After generation:
 ```bash
 cd my-api
 npm install
+```
+- make sure to __create .env based on the provided .example__ or copy it as logs show right before launch.
+
+finally
+
+```bash
 npm run dev
 ```
 

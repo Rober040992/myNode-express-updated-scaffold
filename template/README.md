@@ -14,6 +14,9 @@ npm install
 
 ---
 
+## .env
+- Before run the app, create a `.env` file in our root based on the provided `.env.example` or copy it.
+
 ## 🚀 Run the project
 
 ```bash
