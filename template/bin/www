@@ -8,7 +8,7 @@ import { createServer } from 'node:http'
 import app from '../app.js'
 import debugLib from 'debug'
 
-const debug = debugLib('npx-men-api-starter:server')
+const debug = debugLib('npx-create-men-api:server')
 
 /**
  * Get port from environment and store in Express.

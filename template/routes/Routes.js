@@ -1,9 +1,8 @@
 import express from 'express';
+import { example } from '../controllers/controllerExample.js';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json("Wellcome to MEN api scaffold!");
-});
+router.get('/', example);
 
 export default router;

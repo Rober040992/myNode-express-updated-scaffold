@@ -1,103 +1,69 @@
-# Node ES6 Scaffold
+# create-men-api
 
-A clean and minimal scaffold to build RESTful APIs using the MEN stack (MongoDB, Express, Node.js) with modern ES6 module support.
+A simple CLI tool to scaffold a modern MEN stack (MongoDB, Express, Node.js) API project using ES6 modules.
 
-This project is ideal for quickly starting backend development with an organized folder structure and essential dependencies already configured.
+## 🚀 Usage
 
----
-
-## 📦 Installation
+You can use this tool to create a new API project by running:
 
 ```bash
-npx node-es6-scaffold my-api
-cd my-api
-npm install
+npm init men-api
 ```
 
----
-
-## 🚀 Run the project
+Or using `npx`:
 
 ```bash
+npx create-men-api my-api
+```
+
+This will create a new folder `my-api/` with the full project structure, including all configuration files and dependencies defined.
+
+---
+
+## 📁 What you get
+
+- Express app with ES6 module support
+- MongoDB integration via Mongoose
+- Static file setup and middleware preconfigured
+- `.env.example` and linting ready
+- Modular folder structure for scalability
+
+---
+
+## 📝 Next steps
+
+After generation:
+
+```bash
+cd my-api
+npm install
 npm run dev
 ```
 
-By default, the app will run on port `4444`. You can customize the port using a `.env` file:
-
-```env
-PORT=3000
-MONGO_URI=mongodb://localhost/my-database
-```
-
 ---
 
-## 📁 Folder Structure
+## 📦 Project structure
+
+The generated project includes:
 
 ```
-NODE-ES6-SCAFFOLD/
+my-api/
 ├── bin/
-│   └── www               # Entry point for HTTP server
-├── controllers/          # controllers folder
 ├── lib/
-│   └── mongooseConfig.js # MongoDB connection setup
-├── middlewares/          # middlewares folder
-├── models/               # Place your Mongoose models here
+├── models/
 ├── public/
-│   ├── images/           # Static images
-│   └── stylesheets/      # Static CSS or other assets
 ├── routes/
-│   └── Routes.js         # Express routes
-├── views/                # Optional view engine templates
-├── .env                  # Environment variables (ignored)
-├── .gitignore            # Files to ignore in git
-├── app.js                # Main app setup with Express
-├── package.json          # Project metadata and scripts
-├── README.md             # This file
-└── eslint config files   # Code style configuration
+├── views/
+├── app.js
+├── .env.example
+├── package.json
+├── README.md
+└── ...
 ```
 
 ---
 
-## 📚 Dependencies Included
+## 🛠 Maintained by
 
-Already included in `package.json`:
-
-### Runtime Dependencies
-> [!NOTE]
-> If there is any dependency useless for your project, just delete it from the `package.json`right before use `npm install`
-
-- `express`: Web framework
-- `cors`: providing a Connect/Express middleware
-- `mongoose`: MongoDB ODM
-- `dotenv`: Load environment variables
-- `morgan`: HTTP request logger
-- `http-errors`: Error handling utility
-- `multer`: File upload middleware
-- `express-session`: Session middleware
-- `connect-mongo`: MongoDB session store
-- `jsonwebtoken`: For token-based auth
-- `cross-env`: Environment variable support across platforms
-- `zod`: validations
-
-### Dev Dependencies
-
-- `eslint` + `standard`: For linting and code style
-- `rimraf`, `glob`: Utility tools
-
----
-
-## ✅ What you get
-
-- Basic Express app with JSON & form body parsing
-- MongoDB connection ready via `mongoose`
-- Clean `Routes.js` with a sample `GET /` route
-- Static file serving (images, CSS)
-- `.env` support for environment configuration
-- ESLint with StandardJS preconfigured
-- Modular folder structure
-
----
-
-## 📝 License
-
-MIT
+Roberto Gomez Fabrega  
+[GitHub Repository](https://github.com/Rober040992/myNode-express-updated-scaffold)
