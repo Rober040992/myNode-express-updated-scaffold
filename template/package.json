@@ -1,6 +1,6 @@
 {
   "name": "men-api-scaffold",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "It is a project scaffold designed to build RESTful APIs using the MEN stack (MongoDB, Express, and Node.js) with modern support for ES6 modules. This scaffold provides a clean and professional base setup, ideal for quickly starting backend projects while following best practices in architecture and folder structure.",
   "keywords": [
     "APIs",

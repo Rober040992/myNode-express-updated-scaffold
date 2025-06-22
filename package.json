@@ -1,6 +1,6 @@
 {
   "name": "men-api-scaffold",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A CLI to scaffold a MEN stack API project using ES6 modules.",
   "keywords": [
     "cli",
