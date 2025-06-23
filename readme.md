@@ -42,7 +42,6 @@ npm run dev
 ---
 
 > [!IMPORTANT]
-
 > In case you are not using mongoDB in your pc you will get an `MongooseServerSelectionError: connect ECONNREFUSED`
 
 # ⚠️ MongoDB Connection Requirements
