@@ -32,6 +32,59 @@ MONGO_URI=mongodb://localhost/my-database
 
 ---
 
+> [!IMPORTANT]
+> In case you are not using mongoDB in your pc you will get an `MongooseServerSelectionError: connect ECONNREFUSED`
+
+# ⚠️ MongoDB Connection Requirements
+
+This scaffold uses MongoDB with Mongoose. To run the project successfully, a valid MongoDB connection must be available.
+
+## 🧩 1. Use Local MongoDB (default option)
+
+By default, the scaffold expects MongoDB to be running locally at:
+mongodb://localhost:27017
+
+### ✅ Steps to run it locally:
+
+1. **Install MongoDB Community Edition:**
+   * https://www.mongodb.com/try/download/community
+
+2. **Start MongoDB:**
+   * On Windows (using services):
+   ```bash
+   net start MongoDB
+
+Or manually:
+
+`bashmongod`
+
+Verify it is running:
+`bashmongo`
+
+- Set the .env file:
+Create your .env from the example file:
+bashcp .env.example .env
+Example content:
+envMONGO_URI=mongodb://localhost:27017/men-db
+PORT=4444
+
+
+## 🌐 2. Use MongoDB Atlas (cloud)
+- If you don't want to install MongoDB locally, use MongoDB Atlas:
+✅ Steps:
+
+1. Sign up at: https://www.mongodb.com/cloud/atlas
+2. Create a new cluster (Shared Tier is free)
+3. Click "Connect" > "Connect your application", and copy the connection string like:
+__mongodb+srv://<user>:<password>@<cluster-url>.mongodb.net/<db-name>?retryWrites=true&w=majority__
+
+4. Replace <user>, <password>, <cluster-url>, and <db-name> with your actual values.
+5. Paste it into your .env:
+`envMONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/my-db
+PORT=4444`
+
+---
+
 ## 📁 Folder Structure
 
 ```
